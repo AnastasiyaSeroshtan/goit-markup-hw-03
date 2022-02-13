@@ -30,6 +30,10 @@ p {
   margin: 0;
 }
 
+img {
+  display: block;
+}
+
 .list {
   list-style: none;
   padding: 0;
@@ -43,6 +47,7 @@ p {
 
 .section {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .container {
@@ -180,6 +185,10 @@ p {
   transform: scale(0);
 }
 
+.benefits {
+  padding-bottom: 0;
+}
+
 .benefits-list {
   display: flex;
   margin-left: -30px;
@@ -199,6 +208,7 @@ p {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .benefits-list-title {
@@ -216,9 +226,43 @@ p {
 }
 /*======= END BENEFITS =======*/
 
+/*======= SRART ACTIVITY =======*/
+
+.activity-list {
+  display: flex;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.activity-list-item {
+  flex-basis: calc((100%-90px) / 3);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+/*======= END ACTIVITY =======*/
+
 /*======= SRART TEAM =======*/
 .team {
   background-color: var(--secondary-background-color);
+}
+
+.team-list {
+  display: flex;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.team-list-item {
+  flex-basis: calc((100%-120px) / 4);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.team-list-item-wrapper {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: var(--primary-background-color);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-list-title {
@@ -226,6 +270,7 @@ p {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .team-list-description {
@@ -240,12 +285,27 @@ p {
 .footer {
   background-color: var(--dark-background-color);
 }
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .logo-text-footer {
   color: var(--light-text-color);
 }
 
 .footer-address {
+  margin-top: 20px;
   font-style: normal;
+}
+
+.footer-address-list-item {
+  margin-bottom: 9px;
+}
+
+.footer-address-list-item:last-child {
+  margin-bottom: 0;
 }
 
 .footer-address-list-link {
